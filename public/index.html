@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset=UTF-8" >
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link rel="stylesheet" href="helper.css">
+</head>
+<body ng-app="diplom" ng-cloak>
+<!--
+  Your HTML content here
+-->
+
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angular-aria/angular-aria.js"></script>
+<script src="../bower_components/angular-material/angular-material.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.js"></script>
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+<!-- Your application bootstrap  -->
+<script type="text/javascript">
+    /**
+     * You must include the dependency on 'ngMaterial'
+     */
+    angular.module('diplom', ['ngMaterial', 'ngRoute']);
+</script>
+<script src="helper.js"></script>
+<div layout="column" layout-align="center center">
+<div layout="row" layout-align="center">
+<md-button href="#menu">Меню</md-button>
+<md-button href="#topo">Топология</md-button>
+<md-button href="#install">Установка</md-button>
+<md-button href="#test">Тестирование</md-button>
+</div>
+
+<div ng-view></div>
+    <p class="intro">Багдасарян Е. А.</p>
+</div>
+
+</body>
+</html>
